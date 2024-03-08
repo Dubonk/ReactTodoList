@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(./Roboto-Black.ttf) format('ttf');
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  color: white;
+  background-color: #242424;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  margin-left: 20px;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.newItemForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.btnAdd {
+  padding: 10px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0; 
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 22px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(252, 221, 47);
+  margin: 15px; 
+  border-radius: 12px;
+  color: #1a1a1a;
+}
+
+.listItem > label {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.btnDelete  {
+  background-color: rgb(255, 89, 89);
+  width: 60%;
+  align-self: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
