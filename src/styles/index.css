@@ -40,6 +40,8 @@ body {
 
 .btnAdd {
   padding: 10px;
+  background-color: rgb(252, 221, 47);
+  color: black;
 }
 
 .list {
@@ -88,7 +90,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #303030;
 }
 button:focus,
 button:focus-visible {
